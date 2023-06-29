@@ -1,0 +1,201 @@
+@media screen and (max-width:1200px) {
+    .productsC,
+    .specialtiesI ul {
+        height: auto;
+        text-align: center
+    }
+    body,
+    html {
+        overflow-x: hidden
+    }
+    .specialtiesI ul {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px
+    }
+    .specialtiesI ul li {
+        flex: 1 1 300px;
+        min-width: 300px;
+        max-width: 300px;
+        padding: 50px 20px
+    }
+    .productsC {
+        width: 100%;
+        background-image: url('../img/desfoque.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 10em 0
+    }
+    .productsI {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        width: 90%;
+        margin: 50px auto
+    }
+    .productsCard {
+        flex: 1 1 250px;
+        min-width: 250px;
+        max-width: 250px;
+        margin: 10px
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body,
+    html {
+        overflow-x: hidden
+    }
+    .menuI li a {
+        line-height: 70px;
+        height: 70px;
+        padding: 25px 10px;
+        color: #f0f8ff;
+        text-transform: uppercase;
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menuC,
+    .menuI {
+        background-color: #333;
+        width: 100%;
+        transition: .5s
+    }
+    body,
+    html {
+        overflow-x: hidden
+    }
+    .menuC {
+        height: 70px;
+        position: fixed;
+        box-shadow: 1px 2px 5px #333;
+        z-index: 99
+    }
+    .menuC button,
+    .menuI {
+        position: absolute;
+        display: block
+    }
+    .menuC button {
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 100
+    }
+    .menuC button img {
+        height: 50px
+    }
+    .menuC button:focus~.menuI {
+        height: 400px
+    }
+    .menuI {
+        height: 0;
+        top: 0;
+        margin-top: 70px;
+        overflow: hidden
+    }
+    .menuI li {
+        line-height: 40px;
+        height: 40px
+    }
+    .menuI li a {
+        font-size: 14px;
+        line-height: 14px;
+        height: 14px
+    }
+    .menuI li a:hover {
+        padding: 10px 5px
+    }
+}
+
+@media screen and (max-width:480px) {
+    .contactI,
+    .footerC,
+    .homeC {
+        text-align: center
+    }
+    body,
+    html {
+        overflow-x: hidden
+    }
+    .homeC {
+        background-image: url('../img/desfoque.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 10em 2em
+    }
+    .servicesI table td {
+        padding: 10px 5px
+    }
+    .servicesI table td a {
+        padding: 5px!important;
+        margin: 0!important
+    }
+    .contactI {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+        padding: 2em 0
+    }
+    .contactI input,
+    .contactI textarea {
+        width: 300px;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #b4b4b4;
+        margin-top: 30px
+    }
+    .footerC {
+        background-color: #333;
+        color: #f0f8ff;
+        padding: 2em
+    }
+}
+
+@media screen and (max-width:320px) {
+    body,
+    html {
+        overflow-x: hidden
+    }
+    .homeC h1 {
+        font-size: 42px;
+        color: #f0f8ff
+    }
+    .servicesI table td,
+    .servicesI table th {
+        font-size: 14px
+    }
+    .contactC {
+        text-align: center;
+        padding: 2em 1em
+    }
+    .contactI {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center
+    }
+    .contactI input,
+    .contactI textarea {
+        width: 200px;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #b4b4b4;
+        margin-top: 30px
+    }
+}
